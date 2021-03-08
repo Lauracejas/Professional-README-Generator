@@ -55,7 +55,7 @@ ${renderLicenseSection(data.license)}
 ## Contributing
   ${data.contributing}
 
-## Test Instructions
+## Test
   ${data.test}
 
 ## Questions
