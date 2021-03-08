@@ -1,19 +1,19 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { 
+function renderLicenseBadge(license) {
   if (license !== "None") {
     return `![Badge](https://img.shields.io/badge/License-${license}-blue.svg)`
- } 
- return ``;
+  }
+  return ``;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { 
+function renderLicenseLink(license) {
   if (license !== "None") {
     return `- [License](#license)`
- } 
- return ``;
+  }
+  return ``;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -22,8 +22,8 @@ function renderLicenseSection(license) {
   if (license !== "None") {
     return `## License
     This application is covered by the ${license} license.`
- } 
- return ``;
+  }
+  return ``;
 
 }
 
@@ -36,7 +36,7 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
 
-  ## Table of Content
+## Table of Content
 - [Installation](#installation)
 - [Usage](#usage)
 ${renderLicenseLink(data.license)}
@@ -44,28 +44,25 @@ ${renderLicenseLink(data.license)}
 - [Test](#Test)
 - [Questions](#questions)
 
-  ##  Installation
+## Installation
   ${data.installation}
 
-  ## Usage
+## Usage
   ${data.usage}
 
-  ${renderLicenseSection(data.license)}
-  ---
+${renderLicenseSection(data.license)}
 
-  ## Contributing
+## Contributing
   ${data.contributing}
 
-  ## Test Instructions
+## Test Instructions
   ${data.test}
 
-  ## Questions
-  ---
- 
+## Questions
+If you have any question, Email me at: ${data.email} 
+  
   Find me on GitHub: [${data.username}](https://github.com/${data.username})   
   
-  If you have any question, Email me at: ${data.email}  
-
   ---
 
   _This README was generated with ❤️ by [README-generator](https://github.com/Lauracejas/Professional-README-Generator) © 2021_
